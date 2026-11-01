@@ -6,9 +6,12 @@ A stock dashboard powered by data from Yahoo Finance. A Python backend collects 
 
 | Part | Link |
 |---|---|
+| Dashboard (AWS EC2) | http://3.25.147.195 |
 | Dashboard (frontend, Vercel) | https://yahoo-finance-dashboard-sage.vercel.app |
 | API (backend, Render) | https://yahoo-finance-api-83hw.onrender.com |
 | Interactive API docs | https://yahoo-finance-api-83hw.onrender.com/docs |
+
+The AWS deployment is always on. The note below applies to the Render/Vercel deployment.
 
 **Cold start:** both are on free tiers. The backend goes to sleep after about 15 minutes without visitors, and the first request afterwards takes up to about 50 seconds while it wakes up. The dashboard shows a loading state, and later requests are fast.
 
